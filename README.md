@@ -3,7 +3,7 @@
 ---
 
 ## 📸 **Demo Screenshot**
-*(Add your own screenshot once deployed)*
+*(Add your own screenshot once deployed)*  
 
 ![Demo](screenshots/demo.png)
 
@@ -12,8 +12,15 @@
 # **Problem Breakdown & Computational Thinking**
 
 ## **What the App Does**
-This project demonstrates **Merge Sort**, an efficient **O(n log n)** divide-and-conquer sorting algorithm.  
-The app takes a comma-separated list of integers, recursively **splits** it, **sorts** each half, and **merges** them while showing every step clearly.
+This project implements a complete **Merge Sort Visualizer** using Python and Gradio. The goal is to help learners understand how the Merge Sort algorithm works internally by showing:
+
+- Every **recursive split**
+- Every **merge operation**
+- Every **comparison** and **element selection**
+- The **final sorted result**
+- And now, an additional **Random Array Generator** button that automatically produces a list of integers for instant testing
+
+This tool emphasizes clarity, step-by-step explanation, and strong educational value. Users can sort their own custom input or generate sample data with one click.
 
 ---
 
@@ -22,117 +29,206 @@ The app takes a comma-separated list of integers, recursively **splits** it, **s
 ---
 
 ## **1. Decomposition**
-Merge Sort naturally breaks the problem into smaller parts:
+Merge Sort naturally lends itself to decomposition due to its divide-and-conquer structure. The program breaks down the task into:
 
-- Parse user input into a list  
-- Recursively split the list into left and right halves  
-- Sort each half independently  
-- Merge the two sorted halves  
-- Display each step to help learners understand the algorithm  
+- **Input Handling**
+  - Convert user input from a text field into a list of integers
+  - OR generate a random list using the dedicated GUI button
+
+- **Recursive Splitting**
+  - Divide the list into left and right halves until each sublist contains only one element
+
+- **Merging**
+  - Combine sorted halves into a new sorted list
+  - Log every comparison, extraction, and merge action
+
+- **Output Formatting**
+  - Display results with indentation to reveal recursion depth
+  - Present all steps in a readable, top-to-bottom progression
+
+Each component works independently but contributes to a unified workflow.
 
 ---
 
 ## **2. Pattern Recognition**
-Merge Sort uses repeated structures:
+The algorithm exhibits predictable and repeating patterns:
 
-- Every list is split at the midpoint  
-- Every merge compares the smallest elements of each side  
-- Merging continues until one side is empty  
+- **Splitting Pattern**
+  - All lists are split at the midpoint, regardless of content
+  - The splitting depth increases until reaching individual elements
 
-These predictable patterns make it ideal for visualization.
+- **Merging Pattern**
+  - Always compare the *first* elements from each half
+  - Always take the smaller value first
+  - Append leftovers after one side empties
+  - These patterns remain consistent across all input types
+
+- **Random Generation Pattern**
+  - Random integers within a fixed range (0–100 by default)
+  - Fixed length unless modified (default = 8 values)
+  - Ensures predictable structure but varied content
+
+Recognizing these patterns allows the user to understand *why* the algorithm behaves consistently, even with different inputs.
 
 ---
 
 ## **3. Abstraction**
-To simplify the user experience:
+The program hides irrelevant technical details and exposes only what is needed for learning:
 
-- Only essential steps (splits, comparisons, merges) are shown  
-- Internal Python details (indices, recursion depth) are hidden  
-- Indentation visually represents recursion depth  
-- Users interact only through a textbox and a button  
+- Users interact with:
+  - A **textbox** for manual input  
+  - A **button** to generate a random array  
+  - A **button** to start Merge Sort  
+  - A **large text output** area that shows all algorithm steps
+
+- Hidden from the user:
+  - Recursion stack operations
+  - Internal indices
+  - Memory allocation details
+  - Exception handling logic
+
+- Indentation abstraction:
+  - Each recursion depth adds spaces before log entries  
+  - This mimics a tree structure and helps users visualize depth-first execution
+
+This level of abstraction allows learners to focus on the *conceptual process* instead of implementation mechanics.
 
 ---
 
 ## **4. Algorithmic Thinking**
-Merge Sort follows a clear, logical three-step process:
+Merge Sort is built upon strong algorithmic reasoning:
 
-1. **Divide** — split the list into halves  
-2. **Conquer** — recursively sort each half  
-3. **Combine** — merge the sorted halves into a final list  
+1. **Divide**
+   - Cut the list into two halves repeatedly
+   - Reduces a complex problem into smaller solvable components
 
-This structure guarantees efficient and correct sorting.
+2. **Conquer**
+   - Recursively sort each half independently
+   - Base case is reached when a list has 0 or 1 elements
+
+3. **Combine**
+   - Merge the two sorted halves
+   - Carefully compare values and build an ordered output list
+
+The Random Array button also reflects algorithmic thinking by automating the creation of example inputs that demonstrate varied algorithmic behavior.
 
 ---
 
 # ⚙️ **How to Run Locally**
 
 ### **1. Install dependencies**
-```bash
 pip install -r requirements.txt
-```
 
-## Hugging Face App Link
+### **2. Run the application**
+python app.py
+
+### **3. Open the Gradio link printed in your terminal**
+Example:
+http://127.0.0.1:7860
+
+The interface loads in your browser automatically.
+
+---
+
+## 🌐 **Hugging Face App Link**
+(Public deployment URL)
 https://huggingface.co/spaces/jmuir1/CISC_121-FinalProject
 
 ---
 
-## Algorithm Explanation (Simple Overview)
+# **Algorithm Explanation (Simple Overview)**
 
-**Merge Sort** works in three main stages:
+## **1. Split**
+The list is recursively divided into halves until each sublist contains one element.
+This ensures every piece is trivially sorted.
 
-### **1. Split**
-Divide the list repeatedly until each sublist contains only one element.
+## **2. Sort (Base Case)**
+A single-element list is returned directly because it is already sorted.
+This is the foundation of the recursion.
 
-### **2. Sort**
-A single-element list is already sorted (base case).
+## **3. Merge**
+Two sorted halves are combined:
 
-### **3. Merge**
-Repeatedly compare the smallest elements from each half and append them to build a new sorted list.
+- Compare the first elements of each half
+- Append the smaller value to the output list
+- Continue until one half is empty
+- Append remaining elements
 
 ---
 
 ### **Time & Space Complexity**
-- **Worst-case:** O(n log n)  
-- **Best-case:** O(n log n)  
-- **Space complexity:** O(n) (temporary merge arrays)
+
+Scenario | Complexity
+---------|------------
+Best Case | O(n log n)
+Average Case | O(n log n)
+Worst Case | O(n log n)
+Space Complexity | O(n)
+
+This makes Merge Sort extremely efficient and predictable, outperforming simplistic O(n²) algorithms such as Bubble Sort, Insertion Sort, and Selection Sort.
 
 ---
 
-## Testing & Verification
+# **Testing & Verification**
 
-### **1. Small List**
-**Input:**  
-`5, 1, 8, 2, 7`  
-
-**Result:**  
-Correct split + merge sequence and proper final order.
+The application was thoroughly tested using a wide range of list types and input behaviors.
 
 ---
 
-### **2. Larger List**
-**Input:**  
-`38, 27, 43, 3, 9, 82, 10`  
+## **1. Small List**
+Input:  
+5, 1, 8, 2, 7
 
-**Result:**  
-Proper sorting and complete depth-based visualization.
-
----
-
-### **3. Edge Cases**
-
-| Case            | Input        | Expected Behavior              | Result  |
-|-----------------|--------------|--------------------------------|---------|
-| Empty list      | ""           | Return base-case output        | Passed  |
-| Single number   | 7            | Return unchanged               | Passed  |
-| Repeated values | 5, 5, 1, 5    | Stable merge logic             | Passed  |
-| Negative nums   | -3, 10, -1   | Correct ordering               | Passed  |
-| Invalid input   | a, b, c      | Show error message             | Passed  |
+Expected Result:  
+Correct splits, merges, and final sorted order.
 
 ---
 
-## ▶️ Steps to Use the App
+## **2. Larger List**
+Input:  
+38, 27, 43, 3, 9, 82, 10
 
-1. Enter a comma-separated list of integers  
-2. Click "Run Merge Sort"
+Expected Result:  
+Proper recursive breakdown and final sorted output.
 
+---
+
+## **3. Edge Cases**
+Case | Input | Expected Behavior | Result
+-----|--------|--------------------|--------
+Empty list | "" | Return base-case output | Passed
+Single number | 7 | Return unchanged | Passed
+Repeated values | 5, 5, 1, 5 | Stable merge logic | Passed
+Negative nums | -3, 10, -1 | Correct ordering | Passed
+Invalid input | a, b, c | Show error message | Passed
+
+---
+
+## **Random Array Button Tests**
+Example Generated Input:  
+34, 2, 78, 11, 5, 0, 45, 12
+
+Verification:
+- Correct splitting and merging behavior  
+- Handles unpredictable data reliably  
+- Confirms both UI and algorithm resilience  
+
+---
+
+# ▶️ **Steps to Use the App**
+
+1. Enter a comma-separated list **or click "Generate Random Array"**
+2. Click **"Run Merge Sort"**
+3. Watch the detailed breakdown of recursive splitting and merging
+4. Scroll to observe the full process
+5. View the final sorted output at the bottom
+
+---
+
+# ✍️ **Author & Acknowledgment**
+
+Author: Marcus DeMello (BigDaddy)  
+Created for CISC 121 – Introduction to Computer Science  
+Merge Sort algorithm, UI design, testing procedures, and random array feature were developed in accordance with course guidelines.  
+AI assistance used under Level 4 permitted usage.
 
