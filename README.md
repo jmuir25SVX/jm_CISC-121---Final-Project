@@ -222,10 +222,26 @@ Single number | 7 | Return unchanged | Passed
 Repeated values | 5, 5, 1, 5 | Stable merge logic | Passed
 Negative nums | -3, 10, -1 | Correct ordering | Passed
 Invalid input | a, b, c | Show error message | Passed
+---
+
+### **Edge Case Screenshots**
+
+**Repeated values (5, 5, 1, 5)**  
+
+`![Repeated Values](MergeSortTest_1.png)`
+
+**Negative numbers (-1, 10, -3)**  
+
+`![Negative Numbers](MergeSortTest_2.png)`
+
+**Invalid input (a, b, c)**  
+
+`![Invalid Input](MergeSortTest_3.png)`
 
 ---
 
-## **Random Array Button Tests**
+
+## **4. Random Array Button Tests**
 Example Generated Input:  
 34, 2, 78, 11, 5, 0, 45, 12
 
