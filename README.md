@@ -5,7 +5,7 @@
 ## **Demo Screenshot**
 *(Add your own screenshot once deployed)*  
 
-![Demo](screenshots/demo.png)
+![Demo](MergeSortVisualizationDemo.png)
 
 ---
 
