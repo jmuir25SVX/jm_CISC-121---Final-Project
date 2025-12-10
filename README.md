@@ -18,7 +18,7 @@ This project implements a complete **Merge Sort Visualizer** using Python and Gr
 - Every **merge operation**
 - Every **comparison** and **element selection**
 - The **final sorted result**
-- And now, an additional **Random Array Generator** button that automatically produces a list of integers for instant testing
+- An additional **Random Array Generator** button that automatically produces a list of integers for instant testing
 
 This tool emphasizes clarity, step-by-step explanation, and strong educational value. Users can sort their own custom input or generate sample data with one click.
 
@@ -117,9 +117,8 @@ The Random Array button also reflects algorithmic thinking by automating the cre
 # **How to Run Locally**
 
 ### **1. Install dependencies**
-```
 pip install -r requirements.txt
-```
+
 ### **2. Run the application**
 python app.py
 
@@ -131,9 +130,8 @@ The interface loads in your browser automatically.
 
 ---
 
-## 🌐 **Hugging Face App Link**
-(Public deployment URL)
-https://huggingface.co/spaces/jmuir1/CISC_121-FinalProject
+## **Hugging Face App Link**
+
 
 ---
 
@@ -216,7 +214,7 @@ Verification:
 
 ---
 
-# ▶️ **Steps to Use the App**
+# **Steps to Use the App**
 
 1. Enter a comma-separated list **or click "Generate Random Array"**
 2. Click **"Run Merge Sort"**
@@ -226,10 +224,31 @@ Verification:
 
 ---
 
-# ✍️ **Author & Acknowledgment**
+# **Author & Acknowledgment**
 
-Author: Marcus DeMello (BigDaddy)  
+Author: James Muir
 Created for CISC 121 – Introduction to Computer Science  
 Merge Sort algorithm, UI design, testing procedures, and random array feature were developed in accordance with course guidelines.  
-AI assistance used under Level 4 permitted usage.
+
+---
+
+# **AI Level 4 Usage Disclaimer**
+
+This project was developed with permitted assistance from generative AI tools under the **CISC 121 Level 4 AI usage guidelines**.  
+AI support was used strictly for:
+
+- Explaining programming concepts  
+- Improving code readability  
+- Debugging assistance  
+- Formatting documentation  
+- Generating example inputs for testing  
+- Enhancing clarity of written descriptions
+
+All final code, logic, testing decisions, and structural design were reviewed, verified, and approved by the author to ensure full understanding and academic integrity.
+
+No AI-generated code or text was used without modification, verification, or author oversight.  
+Responsibility for all content, correctness, and originality remains solely with the author.
+
+---
+
 
