@@ -69,6 +69,7 @@ This structure guarantees efficient and correct sorting.
 ### **1. Install dependencies**
 ```bash
 pip install -r requirements.txt
+```
 
 ## 🌐 Hugging Face App Link
 *(Insert your public link once deployed)*
