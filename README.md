@@ -9,7 +9,7 @@
 
 ---
 
-# 🧠 **Problem Breakdown & Computational Thinking**
+# **Problem Breakdown & Computational Thinking**
 
 ## **What the App Does**
 This project demonstrates **Merge Sort**, an efficient **O(n log n)** divide-and-conquer sorting algorithm.  
@@ -17,7 +17,7 @@ The app takes a comma-separated list of integers, recursively **splits** it, **s
 
 ---
 
-# 🧩 **Computational Thinking Breakdown**
+# **Computational Thinking Breakdown**
 
 ---
 
@@ -71,12 +71,12 @@ This structure guarantees efficient and correct sorting.
 pip install -r requirements.txt
 ```
 
-## 🌐 Hugging Face App Link
+## Hugging Face App Link
 https://huggingface.co/spaces/jmuir1/CISC_121-FinalProject
 
 ---
 
-## 🔍 Algorithm Explanation (Simple Overview)
+## Algorithm Explanation (Simple Overview)
 
 **Merge Sort** works in three main stages:
 
@@ -98,7 +98,7 @@ Repeatedly compare the smallest elements from each half and append them to build
 
 ---
 
-## ✅ Testing & Verification
+## Testing & Verification
 
 ### **1. Small List**
 **Input:**  
