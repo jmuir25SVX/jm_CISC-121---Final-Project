@@ -2,7 +2,7 @@
 
 ---
 
-## 📸 **Demo Screenshot**
+## **Demo Screenshot**
 *(Add your own screenshot once deployed)*  
 
 ![Demo](screenshots/demo.png)
@@ -114,11 +114,12 @@ The Random Array button also reflects algorithmic thinking by automating the cre
 
 ---
 
-# ⚙️ **How to Run Locally**
+# **How to Run Locally**
 
 ### **1. Install dependencies**
+```
 pip install -r requirements.txt
-
+```
 ### **2. Run the application**
 python app.py
 
