@@ -249,7 +249,9 @@ Verification:
 # **Author & Acknowledgment**
 
 Author: James Muir
+
 Created for CISC 121 – Introduction to Computer Science  
+
 Merge Sort algorithm, UI design, testing procedures, and random array feature were developed in accordance with course guidelines.  
 
 ---
