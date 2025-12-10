@@ -8,7 +8,7 @@
 
 ---
 
-# **Problem Breakdown & Computational Thinking**
+# **Breakdown & Computational Thinking**
 
 ## **What the App Does**
 This project implements a complete **Merge Sort Visualizer** using Python and Gradio. The goal is to help learners understand how the Merge Sort algorithm works internally by showing:
@@ -20,6 +20,19 @@ This project implements a complete **Merge Sort Visualizer** using Python and Gr
 - An additional **Random Array Generator** button that automatically produces a list of integers for instant testing
 
 This tool emphasizes clarity, step-by-step explanation, and strong educational value. Users can sort their own custom input or generate sample data with one click.
+
+---
+
+## Why I Chose Merge Sort
+
+I chose Merge Sort because it has a clear structure that makes it easy to break down, visualize, and explain step-by-step. It also consistently performs well and highlights core concepts like recursion and problem decomposition, which fit the goals of this project.
+
+Key reasons:
+- Predictable **O(n log n)** performance  
+- Naturally demonstrates recursion  
+- Easy to visualize through splits and merges  
+- Clean divide-and-conquer design  
+- Produces meaningful intermediate steps for learning
 
 ---
 
@@ -116,21 +129,31 @@ The Random Array button also reflects algorithmic thinking by automating the cre
 # **How to Run Locally**
 
 ### **1. Install dependencies**
+```
 pip install -r requirements.txt
+```
 
 ### **2. Run the application**
+```
 python app.py
+```
 
-### **3. Open the Gradio link printed in your terminal**
-Example:
-http://127.0.0.1:7860
+### 3. Open the Gradio Link Printed in the Terminal
 
-The interface loads in your browser automatically.
+After running the application, Gradio will display two URLs in your terminal:
+
+- A **local URL** (usually `http://127.0.0.1:7860`)
+- A **temporary public Gradio URL** (looks like `https://xxxxx.gradio.live`)
+
+Click either link to open the Merge Sort Visualizer in your browser.
+
+The interface loads automatically once the link is opened.
 
 ---
 
 ## **Hugging Face App Link**
 
+https://huggingface.co/spaces/jmuir1/CISC_121-FinalProject
 
 ---
 
