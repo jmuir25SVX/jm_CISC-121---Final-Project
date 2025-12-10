@@ -136,6 +136,6 @@ Proper sorting and complete depth-based visualization.
 ## ▶️ Steps to Use the App
 
 1. Enter a comma-separated list of integers  
-2. Click
+2. Click "Run Merge Sort"
 
 
