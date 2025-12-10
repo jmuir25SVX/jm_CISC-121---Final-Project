@@ -228,15 +228,15 @@ Invalid input | a, b, c | Show error message | Passed
 
 **Repeated values (5, 5, 1, 5)**  
 
-![Repeated Values](screenshots/MergeSortTest_1.png)`
+![Repeated Values](screenshots/MergeSortTest_1.png)
 
 **Negative numbers (-1, 10, -3)**  
 
-![Negative Numbers](screenshots/MergeSortTest_2.png)`
+![Negative Numbers](screenshots/MergeSortTest_2.png)
 
 **Invalid input (a, b, c)**  
 
-![Invalid Input](screenshots/MergeSortTest_3.png)`
+![Invalid Input](screenshots/MergeSortTest_3.png)
 
 ---
 
