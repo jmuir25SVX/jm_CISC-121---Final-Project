@@ -72,10 +72,7 @@ pip install -r requirements.txt
 ```
 
 ## 🌐 Hugging Face App Link
-*(Insert your public link once deployed)*
-
-Example:  
-https://huggingface.co/spaces/yourusername/merge-sort-visualizer
+https://huggingface.co/spaces/jmuir1/CISC_121-FinalProject
 
 ---
 
