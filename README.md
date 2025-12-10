@@ -3,7 +3,6 @@
 ---
 
 ## **Demo Screenshot**
-*(Add your own screenshot once deployed)*  
 
 ![Demo](MergeSortVisualizationDemo.png)
 
