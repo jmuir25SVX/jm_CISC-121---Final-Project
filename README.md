@@ -70,3 +70,71 @@ This structure guarantees efficient and correct sorting.
 ```bash
 pip install -r requirements.txt
 
+## 🌐 Hugging Face App Link
+*(Insert your public link once deployed)*
+
+Example:  
+https://huggingface.co/spaces/yourusername/merge-sort-visualizer
+
+---
+
+## 🔍 Algorithm Explanation (Simple Overview)
+
+**Merge Sort** works in three main stages:
+
+### **1. Split**
+Divide the list repeatedly until each sublist contains only one element.
+
+### **2. Sort**
+A single-element list is already sorted (base case).
+
+### **3. Merge**
+Repeatedly compare the smallest elements from each half and append them to build a new sorted list.
+
+---
+
+### **Time & Space Complexity**
+- **Worst-case:** O(n log n)  
+- **Best-case:** O(n log n)  
+- **Space complexity:** O(n) (temporary merge arrays)
+
+---
+
+## ✅ Testing & Verification
+
+### **1. Small List**
+**Input:**  
+`5, 1, 8, 2, 7`  
+
+**Result:**  
+Correct split + merge sequence and proper final order.
+
+---
+
+### **2. Larger List**
+**Input:**  
+`38, 27, 43, 3, 9, 82, 10`  
+
+**Result:**  
+Proper sorting and complete depth-based visualization.
+
+---
+
+### **3. Edge Cases**
+
+| Case            | Input        | Expected Behavior              | Result  |
+|-----------------|--------------|--------------------------------|---------|
+| Empty list      | ""           | Return base-case output        | Passed  |
+| Single number   | 7            | Return unchanged               | Passed  |
+| Repeated values | 5, 5, 1, 5    | Stable merge logic             | Passed  |
+| Negative nums   | -3, 10, -1   | Correct ordering               | Passed  |
+| Invalid input   | a, b, c      | Show error message             | Passed  |
+
+---
+
+## ▶️ Steps to Use the App
+
+1. Enter a comma-separated list of integers  
+2. Click
+
+
